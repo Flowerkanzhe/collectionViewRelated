@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d9t-9s-c4n">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="MMY-ZD-WGN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d9t-9s-c4n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="51h-BH-lB7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9yI-OG-JYp" kind="relationship" relationship="rootViewController" id="xGX-ML-aFe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ps6-rW-I8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="219"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w2I-8H-yai">
+            <objects>
+                <viewController id="9yI-OG-JYp" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DGe-hX-D2I"/>
+                        <viewControllerLayoutGuide type="bottom" id="EU5-Kb-fBA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="If1-hh-2jZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gXm-xt-8b6">
+                        <nil key="title"/>
+                        <leftBarButtonItems>
+                            <barButtonItem title="添加" id="jxb-rg-eYz">
+                                <connections>
+                                    <action selector="add:" destination="9yI-OG-JYp" id="URD-W8-fea"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="删除" id="RfI-ue-1PP">
+                                <connections>
+                                    <action selector="delete:" destination="9yI-OG-JYp" id="HTv-cq-tB9"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="change" id="wkt-9H-swh">
+                            <connections>
+                                <action selector="changeItem:" destination="9yI-OG-JYp" id="3D3-V8-663"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9HU-Fw-aQs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="99"/>
+        </scene>
+    </scenes>
+</document>
